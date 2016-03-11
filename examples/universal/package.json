@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rackt/redux.git"
+    "url": "git+https://github.com/reactjs/redux.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rackt/redux/issues"
+    "url": "https://github.com/reactjs/redux/issues"
   },
-  "homepage": "http://rackt.github.io/redux",
+  "homepage": "http://redux.js.org",
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "babel-register": "^6.4.3",
@@ -31,10 +31,10 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "babel-preset-react-hmre": "^1.0.1",
+    "babel-preset-react-hmre": "^1.1.1",
     "babel-runtime": "^6.3.13",
     "webpack": "^1.11.0",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-middleware": "^2.9.1"
   }
 }

@@ -71,10 +71,10 @@ const todo = (state, action) => {
         return state
       }
 
-      return {
-        ...state,
+      return Object.assign({}, state, {
         completed: !state.completed
-      }
+      })
+      
     default:
       return state
   }
@@ -347,15 +347,21 @@ let AddTodo = ({ dispatch }) => {
 
   return (
     <div>
-      <input ref={node => {
-        input = node
-      }} />
-      <button onClick={() => {
+      <form onSubmit={e => {
+        e.preventDefault()
+        if (!input.value.trim()) {
+          return
+        }
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        Add Todo
-      </button>
+        <input ref={node => {
+          input = node
+        }} />
+        <button type="submit">
+          Add Todo
+        </button>
+      </form>
     </div>
   )
 }
